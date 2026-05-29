@@ -1,0 +1,33 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--white);padding:26px;}
+  .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+  .row + .row{margin-top:16px;}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-text);font-weight:700;
+    font-size:15px;border-radius:var(--r-pill);padding:13px 22px;border:1px solid transparent;cursor:pointer;}
+  .btn svg{width:18px;height:18px;}
+  .primary{background:var(--cyan-500);color:#fff;box-shadow:var(--shadow-green);}
+  .secondary{background:var(--white);color:var(--navy-800);border-color:var(--line-2);}
+  .navy{background:var(--navy-800);color:#fff;}
+  .ghost{background:transparent;color:var(--navy-800);}
+  .lbl{font-size:11px;color:var(--fg-3);font-family:ui-monospace,monospace;width:62px;}
+</style>
+</head>
+<body>
+  <div class="row"><span class="lbl">primary</span>
+    <button class="btn primary"><i data-lucide="message-circle"></i>Chamar no WhatsApp</button>
+    <button class="btn navy"><i data-lucide="calendar-check"></i>Solicitar atendimento</button>
+  </div>
+  <div class="row"><span class="lbl">secondary</span>
+    <button class="btn secondary"><i data-lucide="phone"></i>Falar agora</button>
+    <button class="btn ghost">Ver serviços <i data-lucide="arrow-right"></i></button>
+  </div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

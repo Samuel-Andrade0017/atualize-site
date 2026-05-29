@@ -1,0 +1,40 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--paper);padding:24px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);
+    box-shadow:var(--shadow-sm);padding:22px;}
+  .tile{width:46px;height:46px;border-radius:var(--r-md);background:var(--cyan-050);
+    display:flex;align-items:center;justify-content:center;color:var(--cyan-600);margin-bottom:14px;}
+  .tile svg{width:24px;height:24px;}
+  .ct{font-family:var(--font-display);font-weight:600;font-size:18px;color:var(--fg-1);margin:0 0 6px;}
+  .cd{font-size:14px;line-height:1.55;color:var(--fg-2);margin:0;}
+  /* dark variant */
+  .card.dark{background:var(--navy-700);border-color:var(--line-dk);box-shadow:none;}
+  .card.dark .ct{color:#fff;}
+  .card.dark .cd{color:var(--fg-on-dk-2);}
+  .card.dark .tile{background:rgba(0,221,173,0.16);color:var(--cyan-400);}
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card">
+      <div class="tile"><i data-lucide="house"></i></div>
+      <p class="ct">Atendimento em domicílio</p>
+      <p class="cd">Suporte técnico no conforto da sua casa, com horário agendado.</p>
+    </div>
+    <div class="card dark">
+      <div class="tile"><i data-lucide="building-2"></i></div>
+      <p class="ct">Atendimento empresarial</p>
+      <p class="cd">Estrutura e suporte alinhados à rotina da sua empresa.</p>
+    </div>
+  </div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

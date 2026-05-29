@@ -1,0 +1,25 @@
+<!-- @dsCard group="Spacing" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--paper);padding:30px 24px;}
+  .row{display:flex;gap:22px;}
+  .item{flex:1;text-align:center;}
+  .box{height:64px;background:var(--white);border-radius:var(--r-md);}
+  .n{font-size:11.5px;color:var(--fg-1);font-weight:700;margin-top:14px;}
+  .v{font-size:10.5px;color:var(--fg-3);font-family:ui-monospace,monospace;}
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="n">xs</div><div class="v">subtle</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="n">sm</div><div class="v">cards</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="n">md</div><div class="v">raised</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="n">lg</div><div class="v">float</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-green);background:var(--cyan-500)"></div><div class="n">green</div><div class="v">CTA glow</div></div>
+  </div>
+</body>
+</html>

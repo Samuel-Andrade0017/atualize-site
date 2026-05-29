@@ -1,0 +1,29 @@
+<!-- @dsCard group="Brand" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--white);padding:24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;}
+  .dash{width:24px;height:2px;background:var(--cyan-500);}
+  .pill{display:inline-flex;align-items:center;gap:7px;background:var(--cyan-050);color:var(--cyan-600);
+    font-weight:700;font-size:13px;padding:8px 14px;border-radius:var(--r-pill);}
+  .pill svg{width:15px;height:15px;}
+  .stars{display:inline-flex;gap:2px;color:#F4B740;}
+  .stars svg{width:18px;height:18px;fill:#F4B740;}
+  .rate{font-weight:800;color:var(--fg-1);font-size:15px;margin-left:6px;}
+</style>
+</head>
+<body>
+  <span class="eyebrow"><span class="dash"></span><span class="t-eyebrow">Como funciona</span></span>
+  <span class="pill"><i data-lucide="map-pin"></i>Goiânia e região</span>
+  <span class="stars">
+    <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+    <span class="rate">5,0</span>
+  </span>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

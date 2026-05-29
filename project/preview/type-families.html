@@ -1,0 +1,30 @@
+<!-- @dsCard group="Type" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--white);padding:24px 26px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .card{border:1px solid var(--line);border-radius:var(--r-md);padding:18px 20px;}
+  .fam{font-size:11px;color:var(--cyan-500);font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+  .big{font-size:40px;line-height:1.05;margin:8px 0 6px;color:var(--fg-1);}
+  .row{font-size:14px;color:var(--fg-2);}
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card">
+      <div class="fam">Display</div>
+      <div class="big" style="font-family:var(--font-display);font-weight:700;">Sora</div>
+      <div class="row" style="font-family:var(--font-display)">400 · 500 · 600 · <b>700</b> · <b style="font-weight:800">800</b></div>
+    </div>
+    <div class="card">
+      <div class="fam">Text / UI</div>
+      <div class="big" style="font-family:var(--font-text);font-weight:700;">Manrope</div>
+      <div class="row" style="font-family:var(--font-text)">400 · 500 · 600 · <b>700</b> · <b style="font-weight:800">800</b></div>
+    </div>
+  </div>
+</body>
+</html>

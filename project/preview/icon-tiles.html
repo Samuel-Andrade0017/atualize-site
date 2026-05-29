@@ -1,0 +1,34 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--white);padding:26px;}
+  .row{display:flex;gap:16px;flex-wrap:wrap;}
+  .tile{width:54px;height:54px;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;}
+  .tile svg{width:26px;height:26px;}
+  .green{background:var(--cyan-050);color:var(--cyan-600);}
+  .navy{background:var(--navy-800);color:var(--cyan-400);}
+  .wood{background:var(--lime-050);color:var(--lime-600);}
+  .plain{background:var(--paper);color:var(--fg-2);}
+  .cap{font-size:11px;color:var(--fg-3);font-family:ui-monospace,monospace;margin-top:18px;}
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="tile green"><i data-lucide="wrench"></i></div>
+    <div class="tile navy"><i data-lucide="cpu"></i></div>
+    <div class="tile wood"><i data-lucide="calendar-check"></i></div>
+    <div class="tile green"><i data-lucide="network"></i></div>
+    <div class="tile navy"><i data-lucide="printer"></i></div>
+    <div class="tile wood"><i data-lucide="gamepad-2"></i></div>
+    <div class="tile green"><i data-lucide="shield-check"></i></div>
+    <div class="tile plain"><i data-lucide="gauge"></i></div>
+  </div>
+  <div class="cap">Lucide · 2px stroke · 24px · currentColor — green / navy / wood / plain tiles</div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

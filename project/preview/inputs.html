@@ -1,0 +1,29 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);background:var(--white);padding:26px;}
+  .field + .field{margin-top:16px;}
+  label{display:block;font-size:13px;font-weight:700;color:var(--fg-1);margin-bottom:7px;}
+  .inp{width:100%;box-sizing:border-box;font-family:var(--font-text);font-size:15px;color:var(--fg-1);
+    background:var(--white);border:1px solid var(--line-2);border-radius:var(--r-md);padding:13px 15px;}
+  .inp::placeholder{color:var(--fg-3);}
+  .inp.focus{border-color:var(--cyan-500);box-shadow:0 0 0 4px rgba(2,164,158,0.18);outline:none;}
+  .hint{font-size:12px;color:var(--fg-3);margin-top:6px;}
+</style>
+</head>
+<body>
+  <div class="field">
+    <label>Nome</label>
+    <input class="inp" placeholder="Seu nome completo">
+  </div>
+  <div class="field">
+    <label>Como podemos ajudar?</label>
+    <input class="inp focus" value="Notebook não liga">
+    <div class="hint">Campo em foco — anel verde 4px.</div>
+  </div>
+</body>
+</html>

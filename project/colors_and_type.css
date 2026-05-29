@@ -1,0 +1,169 @@
+/* =====================================================================
+   ATUALIZE SOLUÇÕES TECNOLÓGICAS — Foundations
+   Colors + Typography tokens
+   Fonts: Sora (display) + Manrope (text) — loaded from Google Fonts.
+   See README.md "VISUAL FOUNDATIONS" for usage rules.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap');
+
+:root {
+  /* ---------- BRAND CORE — sampled from the official logo ---------- */
+  /* Petrol-blue field (#004368) is the anchor brand surface. */
+  --navy-900: #002C46;   /* deepest petrol — footer */
+  --navy-800: #004368;   /* PRIMARY petrol-blue — hero, dark sections, logo field */
+  --navy-700: #0A567E;   /* raised petrol surfaces / cards on dark */
+  --navy-600: #0F6B94;   /* hover on petrol */
+  --navy-050: #E6F0F4;   /* faint petrol tint on light */
+
+  /* Lime — the green half of the swirl */
+  --lime-600: #5A9120;
+  --lime-500: #6FB01E;
+  --lime-400: #8DC81F;   /* brightest lime */
+
+  /* Cyan/teal — the blue-green half of the swirl */
+  --cyan-600: #047E93;
+  --cyan-500: #02A49E;   /* primary teal accent */
+  --cyan-400: #00DDAD;   /* brightest spring-cyan — glows / on-navy accents */
+  --cyan-050: #E2F7F3;   /* teal tint background */
+  --lime-050: #EFF6DD;   /* lime tint background */
+
+  /* Signature brand gradient (lime → cyan), as on the mark */
+  --grad-brand: linear-gradient(120deg, #8DC81F 0%, #2FC79A 52%, #00DDAD 100%);
+  --grad-brand-deep: linear-gradient(120deg, #6FB01E 0%, #02A49E 100%);
+
+  /* ---------- NEUTRALS ---------- */
+  --white:    #FFFFFF;
+  --paper:    #F4F7F8;   /* default light page background */
+  --paper-2:  #E9EEF1;   /* alternate light section */
+  --line:     #E0E7EA;   /* hairline borders on light */
+  --line-2:   #CAD4D9;   /* stronger dividers */
+  --line-dk:  rgba(255,255,255,0.12); /* hairline on petrol */
+
+  --ink:      #052B40;   /* primary text on light */
+  --fg-1:     #07304A;   /* headings */
+  --fg-2:     #3A5567;   /* body text */
+  --fg-3:     #6A8190;   /* muted / captions */
+  --fg-on-dk-1: #FFFFFF; /* primary text on petrol */
+  --fg-on-dk-2: #B4CCD8; /* secondary text on petrol */
+  --fg-on-dk-3: #7BA0B2; /* muted text on petrol */
+
+  /* ---------- SEMANTIC ---------- */
+  --success: #02A49E;
+  --warning: #E0A23C;
+  --danger:  #E0594B;
+  --whatsapp: #25D366;   /* WhatsApp brand (action button) */
+
+  /* ---------- TYPE FAMILIES ---------- */
+  --font-display: 'Sora', system-ui, -apple-system, sans-serif;
+  --font-text:    'Manrope', system-ui, -apple-system, sans-serif;
+  --font-brand:   'Oxanium', 'Sora', system-ui, sans-serif; /* logo wordmark / techy accents */
+
+  /* ---------- TYPE SCALE (fluid-friendly base) ---------- */
+  --fs-display: 64px;  --lh-display: 1.04; --ls-display: -0.02em;
+  --fs-h1: 48px;       --lh-h1: 1.08;      --ls-h1: -0.02em;
+  --fs-h2: 34px;       --lh-h2: 1.14;      --ls-h2: -0.015em;
+  --fs-h3: 24px;       --lh-h3: 1.25;      --ls-h3: -0.01em;
+  --fs-lead: 20px;     --lh-lead: 1.55;
+  --fs-body: 17px;     --lh-body: 1.65;
+  --fs-small: 15px;    --lh-small: 1.55;
+  --fs-eyebrow: 13px;  --lh-eyebrow: 1.2;  --ls-eyebrow: 0.14em;
+  --fs-caption: 13px;  --lh-caption: 1.45;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* ---------- SPACING (8pt-ish) ---------- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  /* ---------- RADII ---------- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* ---------- SHADOWS / ELEVATION ---------- */
+  --shadow-xs: 0 1px 2px rgba(8,27,48,0.06);
+  --shadow-sm: 0 2px 8px rgba(8,27,48,0.06);
+  --shadow-md: 0 10px 30px rgba(8,27,48,0.08);
+  --shadow-lg: 0 24px 60px rgba(8,27,48,0.12);
+  --shadow-green: 0 12px 30px rgba(2,164,158,0.30);
+  --shadow-inset-line: inset 0 0 0 1px var(--line);
+
+  /* ---------- MOTION ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 420ms;
+
+  /* ---------- LAYOUT ---------- */
+  --container: 1200px;
+  --container-narrow: 820px;
+  --gutter: 24px;
+}
+
+/* =====================================================================
+   SEMANTIC TYPE CLASSES
+   ===================================================================== */
+.t-eyebrow {
+  font-family: var(--font-text);
+  font-size: var(--fs-eyebrow);
+  line-height: var(--lh-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  color: var(--green-500);
+}
+.t-display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: var(--weight-bold);
+  color: var(--fg-1);
+}
+.t-h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1); line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1); font-weight: var(--weight-bold);
+  color: var(--fg-1);
+}
+.t-h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2); line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2); font-weight: var(--weight-bold);
+  color: var(--fg-1);
+}
+.t-h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3); line-height: var(--lh-h3);
+  letter-spacing: var(--ls-h3); font-weight: var(--weight-semibold);
+  color: var(--fg-1);
+}
+.t-lead {
+  font-family: var(--font-text);
+  font-size: var(--fs-lead); line-height: var(--lh-lead);
+  font-weight: var(--weight-regular); color: var(--fg-2);
+}
+.t-body {
+  font-family: var(--font-text);
+  font-size: var(--fs-body); line-height: var(--lh-body);
+  font-weight: var(--weight-regular); color: var(--fg-2);
+}
+.t-small {
+  font-family: var(--font-text);
+  font-size: var(--fs-small); line-height: var(--lh-small);
+  color: var(--fg-3);
+}
+.t-caption {
+  font-family: var(--font-text);
+  font-size: var(--fs-caption); line-height: var(--lh-caption);
+  color: var(--fg-3);
+}

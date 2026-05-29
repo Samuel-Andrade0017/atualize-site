@@ -1,0 +1,35 @@
+<!-- @dsCard group="Brand" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body{margin:0;font-family:var(--font-text);display:flex;}
+  .pane{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:26px 20px;min-height:200px;}
+  .navy{background:var(--navy-800);}
+  .light{background:var(--white);}
+  .mark-pane{flex:0 0 150px;border-left:1px solid var(--line);}
+  .full{height:150px;width:auto;}
+  .badge{background:var(--navy-800);border-radius:var(--r-lg);padding:22px 30px;box-shadow:var(--shadow-md);}
+  .badge img{height:120px;width:auto;display:block;}
+  .markbig{width:88px;height:auto;}
+  .cap{font-size:10.5px;color:var(--fg-3);font-family:ui-monospace,monospace;}
+  .cap.dk{color:var(--fg-on-dk-3);}
+</style>
+</head>
+<body>
+  <div class="pane navy">
+    <img class="full" src="../assets/logo-full.png" alt="Atualize">
+    <span class="cap dk">on petrol · logo-full.png</span>
+  </div>
+  <div class="pane light">
+    <div class="badge"><img src="../assets/logo-full.png" alt="Atualize"></div>
+    <span class="cap">on light · contained lockup</span>
+  </div>
+  <div class="pane light mark-pane">
+    <img class="markbig" src="../assets/logo-mark.png" alt="mark">
+    <span class="cap">mark</span>
+  </div>
+</body>
+</html>
