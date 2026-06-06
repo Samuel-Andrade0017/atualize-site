@@ -1,0 +1,95 @@
+/* =====================================================================
+   ATUALIZE SOLUÇÕES TECNOLÓGICAS — Foundations
+   Colors + Typography tokens
+   Fonts: Sora (display) + Manrope (text) — loaded from Google Fonts.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap');
+
+:root {
+  --navy-900: #002C46;
+  --navy-800: #004368;
+  --navy-700: #0A567E;
+  --navy-600: #0F6B94;
+  --navy-050: #E6F0F4;
+
+  --lime-600: #5A9120;
+  --lime-500: #6FB01E;
+  --lime-400: #8DC81F;
+
+  --cyan-600: #047E93;
+  --cyan-500: #02A49E;
+  --cyan-400: #00DDAD;
+  --cyan-050: #E2F7F3;
+  --lime-050: #EFF6DD;
+
+  --grad-brand: linear-gradient(120deg, #8DC81F 0%, #2FC79A 52%, #00DDAD 100%);
+  --grad-brand-deep: linear-gradient(120deg, #6FB01E 0%, #02A49E 100%);
+
+  --white:    #FFFFFF;
+  --paper:    #F4F7F8;
+  --paper-2:  #E9EEF1;
+  --line:     #E0E7EA;
+  --line-2:   #CAD4D9;
+  --line-dk:  rgba(255,255,255,0.12);
+
+  --ink:      #052B40;
+  --fg-1:     #07304A;
+  --fg-2:     #3A5567;
+  --fg-3:     #6A8190;
+  --fg-on-dk-1: #FFFFFF;
+  --fg-on-dk-2: #B4CCD8;
+  --fg-on-dk-3: #7BA0B2;
+
+  --success: #02A49E;
+  --warning: #E0A23C;
+  --danger:  #E0594B;
+  --whatsapp: #25D366;
+
+  --font-display: 'Sora', system-ui, -apple-system, sans-serif;
+  --font-text:    'Manrope', system-ui, -apple-system, sans-serif;
+  --font-brand:   'Oxanium', 'Sora', system-ui, sans-serif;
+
+  --fs-display: 64px;  --lh-display: 1.04; --ls-display: -0.02em;
+  --fs-h1: 48px;       --lh-h1: 1.08;      --ls-h1: -0.02em;
+  --fs-h2: 34px;       --lh-h2: 1.14;      --ls-h2: -0.015em;
+  --fs-h3: 24px;       --lh-h3: 1.25;      --ls-h3: -0.01em;
+  --fs-lead: 20px;     --lh-lead: 1.55;
+  --fs-body: 17px;     --lh-body: 1.65;
+  --fs-small: 15px;    --lh-small: 1.55;
+  --fs-eyebrow: 13px;  --lh-eyebrow: 1.2;  --ls-eyebrow: 0.14em;
+  --fs-caption: 13px;  --lh-caption: 1.45;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(8,27,48,0.06);
+  --shadow-sm: 0 2px 8px rgba(8,27,48,0.06);
+  --shadow-md: 0 10px 30px rgba(8,27,48,0.08);
+  --shadow-lg: 0 24px 60px rgba(8,27,48,0.12);
+  --shadow-green: 0 12px 30px rgba(2,164,158,0.30);
+  --shadow-inset-line: inset 0 0 0 1px var(--line);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 240ms;
+  --dur-slow: 420ms;
+
+  --container: 1200px;
+  --container-narrow: 820px;
+  --gutter: 24px;
+}
