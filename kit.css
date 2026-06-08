@@ -206,9 +206,9 @@ body { overflow-x: hidden; }
 .faq-q:hover { color: var(--cyan-600); }
 .faq-item.open .faq-q { color: var(--cyan-600); }
 .faq-icon { flex: none; color: var(--cyan-500); display: inline-flex; }
-.faq-a-wrap { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--dur) var(--ease-out); }
-.faq-item.open .faq-a-wrap { grid-template-rows: 1fr; }
-.faq-a { overflow: hidden; font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0;
+.faq-a-wrap { overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
+.faq-item.open .faq-a-wrap { max-height: 600px; }
+.faq-a { font-size: 15.5px; line-height: 1.65; color: var(--fg-2); margin: 0;
   padding: 0 24px 20px; }
 
 .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 232px; gap: 18px; }
