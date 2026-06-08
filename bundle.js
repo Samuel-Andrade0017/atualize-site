@@ -187,7 +187,7 @@ function Hero({ onWhats, onSolicitar }) {
         <div className="hero-copy">
           <Reveal><Eyebrow>Suporte técnico especializado</Eyebrow></Reveal>
           <Reveal delay={60}>
-            <h1 className="h-display">Suporte técnico em informática com atendimento <span className="grad-text">em domicílios e empresas</span></h1>
+            <h1 className="h-display">Soluções em informática para casa e empresa — <span className="grad-text">com horário agendado e atendimento no local</span></h1>
           </Reveal>
           <Reveal delay={120}>
             <p className="lead">Atendimento personalizado para assistência em computadores de mesa (desktops), notebooks e impressoras – com suporte especializado e atenção aos detalhes.</p>
@@ -213,7 +213,7 @@ function Hero({ onWhats, onSolicitar }) {
 const MODEL = [
   { icon: "house", title: "Atendimento em domicílio", text: "Suporte técnico no conforto da sua casa, com horário agendado." },
   { icon: "building-2", title: "Atendimento empresarial", text: "Estrutura e suporte alinhados à rotina e às demandas da sua empresa." },
-  { icon: "wrench", title: "Assistência especializada", text: "Diagnósticos e reparos avançados realizados na nossa bancada técnica." },
+  { icon: "wrench", title: "Serviço de bancada", text: "Diagnósticos e serviços avançados realizados no nosso laboratório técnico." },
   { icon: "calendar-check", title: "Atendimento agendado", text: "Você escolhe o melhor horário e acompanha tudo pelo WhatsApp." },
 ];
 
@@ -226,7 +226,7 @@ function ServiceModel() {
           <Reveal delay={60}><h2 className="h2">Um modelo de atendimento mais próximo e organizado</h2></Reveal>
           <Reveal delay={120}>
             <p className="body" style={{ marginTop: 18 }}>
-              Trabalhamos com atendimento técnico em domicílio, empresas e assistência especializada com horário agendado.
+              Trabalhamos com atendimento em domicílio, empresas e serviço de bancada especializado, com horário agendado.
             </p>
           </Reveal>
           <Reveal delay={160}>
@@ -265,7 +265,7 @@ const SERVICES = [
   { icon: "building-2", title: "Suporte empresarial", text: "Manutenção preventiva e suporte contínuo para a estrutura da empresa." },
   { icon: "network", title: "Redes e configuração", text: "Configuração de redes, Wi-Fi e equipamentos com estabilidade." },
   { icon: "printer", title: "Impressoras", text: "Instalação, configuração e manutenção de impressoras e multifuncionais." },
-  { icon: "wrench", title: "Reparo avançado", text: "Diagnóstico e reparo de problemas complexos em nossa bancada técnica." },
+  { icon: "wrench", title: "Serviço avançado de bancada", text: "Diagnóstico e resolução de problemas complexos no nosso laboratório técnico." },
   { icon: "gamepad-2", title: "Montagem gamer", text: "Montagem e configuração de PCs gamer sob medida para o seu uso." },
 ];
 
@@ -302,7 +302,7 @@ const DIFFS = [
   { icon: "eye", title: "Transparência", text: "Tudo é explicado antes da execução do serviço, sem surpresas." },
   { icon: "list-checks", title: "Organização", text: "Atendimento com horário agendado e acompanhamento pelo WhatsApp." },
   { icon: "zap", title: "Agilidade", text: "Atendimentos rápidos e suporte eficiente para reduzir o seu tempo parado." },
-  { icon: "shield-check", title: "Assistência especializada", text: "Estrutura preparada para diagnósticos e reparos avançados." },
+  { icon: "shield-check", title: "Laboratório técnico", text: "Estrutura preparada para diagnósticos e serviços avançados de bancada." },
 ];
 
 function Differentials() {
@@ -349,7 +349,7 @@ const FAQS = [
   },
   {
     q: "Preciso levar meu computador até vocês?",
-    a: "Não necessariamente. Buscamos resolver o máximo possível no local. Apenas quando o problema exige diagnósticos ou reparos avançados o equipamento é encaminhado para nossa bancada técnica.",
+    a: "Não necessariamente. Buscamos resolver o máximo possível no local. Apenas quando o serviço exige recursos avançados de laboratório o equipamento é encaminhado ao nosso espaço técnico.",
   },
   {
     q: "Como funciona o agendamento?",
@@ -501,7 +501,7 @@ function FinalCTA({ onWhats }) {
               <Eyebrow>Fale com a gente</Eyebrow>
               <h2 className="h2" style={{ fontSize: "clamp(30px,4vw,44px)" }}>Precisa de suporte técnico?</h2>
               <p className="lead" style={{ margin: "16px auto 0", maxWidth: 520 }}>
-                Atendimento especializado em domicílio, empresas e assistência técnica com horário agendado.
+                Suporte especializado em informática — em domicílio, empresas e no nosso laboratório técnico, com horário agendado.
               </p>
               <div className="cta-btns">
                 <Btn variant="whatsapp" size="lg" icon="message-circle" onClick={onWhats}>Chamar no WhatsApp</Btn>
