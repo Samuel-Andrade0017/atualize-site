@@ -187,7 +187,7 @@ function Hero({ onWhats, onSolicitar }) {
         <div className="hero-copy">
           <Reveal><Eyebrow>Suporte técnico especializado</Eyebrow></Reveal>
           <Reveal delay={60}>
-            <h1 className="h-display">Soluções em informática para casa e empresa — <span className="grad-text">com horário agendado e atendimento no local</span></h1>
+            <h1 className="h-display">Suporte técnico em informática com atendimento <span className="grad-text">em domicílios e empresas</span></h1>
           </Reveal>
           <Reveal delay={120}>
             <p className="lead">Atendimento personalizado para assistência em computadores de mesa (desktops), notebooks e impressoras – com suporte especializado e atenção aos detalhes.</p>
