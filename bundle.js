@@ -562,8 +562,8 @@ function Footer({ onWhats }) {
         </div>
       </div>
       <div className="wrap ft-bottom">
-        <span>© {new Date().getFullYear()} Atualize Soluções Tecnológicas.</span>
-        <span>Suporte técnico • Domicílio • Empresas • Assistência</span>
+        <span>© {new Date().getFullYear()} Atualize Soluções Tecnológicas. CNPJ 59.763.505/0001-50</span>
+        <span>Manutenção de computadores • Domicílio • Empresas • Goiânia</span>
       </div>
     </footer>
   );
