@@ -185,12 +185,12 @@ function Hero({ onWhats, onSolicitar }) {
       <span className="hero-glow" />
       <div className="wrap hero-grid">
         <div className="hero-copy">
-          <Reveal><Eyebrow>Suporte técnico especializado</Eyebrow></Reveal>
+          <Reveal><Eyebrow>Manutenção de computadores e impressoras</Eyebrow></Reveal>
           <Reveal delay={60}>
-            <h1 className="h-display">Suporte técnico em informática com atendimento <span className="grad-text">em domicílios e empresas</span></h1>
+            <h1 className="h-display">Atendimento técnico agendado para <span className="grad-text">empresas e residências</span></h1>
           </Reveal>
           <Reveal delay={120}>
-            <p className="lead">Atendimento personalizado para assistência em computadores de mesa (desktops), notebooks e impressoras – com suporte especializado e atenção aos detalhes.</p>
+            <p className="lead">Diagnóstico, manutenção e melhorias para computadores, notebooks e impressoras com atendimento personalizado.</p>
           </Reveal>
           <Reveal delay={180}>
             <div className="hero-cta">
@@ -211,8 +211,8 @@ function Hero({ onWhats, onSolicitar }) {
 
 /* --- ServiceModel.js --- */
 const MODEL = [
-  { icon: "house", title: "Atendimento em domicílio", text: "Suporte técnico no conforto da sua casa, com horário agendado." },
-  { icon: "building-2", title: "Atendimento empresarial", text: "Estrutura e suporte alinhados à rotina e às demandas da sua empresa." },
+  { icon: "house", title: "Atendimento em domicílio", text: "Manutenção de computadores e notebooks em domicílio, com horário agendado." },
+  { icon: "building-2", title: "Atendimento empresarial", text: "Manutenção e acompanhamento de equipamentos para empresas." },
   { icon: "wrench", title: "Serviço de bancada", text: "Diagnósticos e serviços avançados realizados no nosso laboratório técnico." },
   { icon: "calendar-check", title: "Atendimento agendado", text: "Você escolhe o melhor horário e acompanha tudo pelo WhatsApp." },
 ];
@@ -231,7 +231,7 @@ function ServiceModel() {
           </Reveal>
           <Reveal delay={160}>
             <p className="body" style={{ marginTop: 14 }}>
-              Nosso foco é trazer mais praticidade e atenção em cada atendimento, buscando resolver o máximo possível diretamente no local. Serviços que exigem testes avançados ou reparos específicos são realizados em nossa bancada técnica.
+              Nosso foco é trazer mais praticidade e atenção em cada atendimento, realizando diagnósticos e manutenções diretamente no local sempre que possível. Serviços que exigem testes avançados ou reparos específicos são realizados em nosso laboratório técnico.
             </p>
           </Reveal>
           <Reveal delay={210}>
@@ -276,7 +276,7 @@ function Services() {
       <div className="wrap" style={{ position: "relative" }}>
         <div className="head center" style={{ marginBottom: 52 }}>
           <Reveal><Eyebrow>Serviços</Eyebrow></Reveal>
-          <Reveal delay={60}><h2 className="h2">Serviços especializados</h2></Reveal>
+          <Reveal delay={60}><h2 className="h2">Serviços de manutenção</h2></Reveal>
           <Reveal delay={120}><p className="lead">Soluções completas para computadores de mesa (desktops), notebooks e impressoras – com organização e atenção aos detalhes em cada atendimento.</p></Reveal>
         </div>
         <div className="grid g-4">
