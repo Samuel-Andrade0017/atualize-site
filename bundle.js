@@ -201,7 +201,7 @@ function Hero({ onWhats, onSolicitar }) {
         </div>
 
         <Reveal delay={160} className="hero-media">
-          <Photo style={{ minHeight: 460 }} src="assets/photos/hero.jpeg"
+          <Photo style={{ minHeight: 460 }} src="assets/photos/pc-4.jpeg"
             alt="Montagem gamer pela Atualize Soluções Tecnológicas" />
         </Reveal>
       </div>
