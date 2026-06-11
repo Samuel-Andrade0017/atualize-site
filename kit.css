@@ -276,7 +276,6 @@ body { overflow-x: hidden; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
 .hero-chips { display: flex; flex-wrap: wrap; gap: 14px 26px; margin-top: 32px; }
 .hero-media { position: relative; }
-.hero-media .photo-img { object-fit: contain; object-position: center; }
 @media (max-width: 940px) {
   .hero-grid { grid-template-columns: 1fr; gap: 44px; }
   .hero { padding-top: 122px; }
