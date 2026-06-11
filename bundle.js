@@ -499,9 +499,9 @@ function FinalCTA({ onWhats }) {
             <span className="cta-glow" />
             <div className="cta-inner">
               <Eyebrow>Fale com a gente</Eyebrow>
-              <h2 className="h2" style={{ fontSize: "clamp(30px,4vw,44px)" }}>Precisa de suporte técnico?</h2>
+              <h2 className="h2" style={{ fontSize: "clamp(30px,4vw,44px)" }}>Seu computador com problema?</h2>
               <p className="lead" style={{ margin: "16px auto 0", maxWidth: 520 }}>
-                Suporte especializado em informática — em domicílio, empresas e no nosso laboratório técnico, com horário agendado.
+                Atendimento especializado em informática — em domicílio, empresas e no nosso laboratório técnico, com horário agendado.
               </p>
               <div className="cta-btns">
                 <Btn variant="whatsapp" size="lg" icon="message-circle" onClick={onWhats}>Chamar no WhatsApp</Btn>
