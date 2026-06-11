@@ -201,8 +201,8 @@ function Hero({ onWhats, onSolicitar }) {
         </div>
 
         <Reveal delay={160} className="hero-media">
-          <Photo style={{ minHeight: 460 }} icon="building-2"
-            caption="Escritório da Atualize — foto do ambiente com logo na parede em breve." />
+          <Photo style={{ minHeight: 460 }} src="assets/photos/hero.jpeg"
+            alt="Montagem gamer pela Atualize Soluções Tecnológicas" />
         </Reveal>
       </div>
     </section>
@@ -459,11 +459,11 @@ function Reviews() {
 
 /* --- Gallery.js --- */
 const WORKS = [
-  { area: "big", src: "assets/photos/gamer-rgb.png",  cap: "Montagem gamer com iluminação RGB — pronta para entrega." },
-  { area: "a",   src: "assets/photos/internals.png",  cap: "Upgrade de placa de vídeo e gerenciamento de cabos." },
-  { area: "b",   src: "assets/photos/desk-setup.png", cap: "Setup completo configurado e testado." },
-  { area: "c",   src: null, icon: "camera",                 cap: "Foto do trabalho em breve." },
-  { area: "d",   src: null, icon: "camera",                 cap: "Foto do trabalho em breve." },
+  { area: "big", src: "assets/photos/pc-1.jpeg", cap: "Montagem gamer com iluminação RGB — pronta para entrega." },
+  { area: "a",   src: "assets/photos/pc-2.jpeg", cap: "PC gamer montado e testado na bancada." },
+  { area: "b",   src: "assets/photos/pc-3.jpeg", cap: "Montagem com water cooler e fans RGB." },
+  { area: "c",   src: "assets/photos/pc-4.jpeg", cap: "Setup configurado e organizado." },
+  { area: "d",   src: "assets/photos/pc-5.jpeg", cap: "Equipamento entregue com atenção aos detalhes." },
 ];
 
 function Gallery() {
