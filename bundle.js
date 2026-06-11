@@ -571,7 +571,7 @@ function Footer({ onWhats }) {
 
 /* --- App.js --- */
 const WHATSAPP_URL = "https://wa.me/5562995118380?text=" +
-  encodeURIComponent("Olá! Vim pelo site e gostaria de solicitar um atendimento técnico.");
+  encodeURIComponent("Olá! Vim pelo site da Atualize e gostaria de agendar um atendimento. Poderia me ajudar?");
 
 function Toast({ show, text }) {
   return (
