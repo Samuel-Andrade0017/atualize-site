@@ -1,97 +1,5 @@
 /* Atualize — deploy bundle (all components in one Babel scope) */
 
-/* --- CircuitCanvas.js --- */
-function CircuitCanvas({ opacity = 1 }) {
-  const ref = React.useRef(null);
-  React.useEffect(() => {
-    const canvas = ref.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    let raf, frame = 0;
-    const sparks = [];
-    let traces = [];
-    const CYAN = "#02a49e", LIME = "#84cc16";
-
-    function resize() {
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = canvas.offsetWidth * dpr;
-      canvas.height = canvas.offsetHeight * dpr;
-      ctx.scale(dpr, dpr);
-      buildTraces();
-    }
-
-    function buildTraces() {
-      traces = [];
-      const W = canvas.offsetWidth, H = canvas.offsetHeight;
-      const STEP = 64;
-      for (let y = STEP; y < H - 10; y += STEP) {
-        if (Math.random() > 0.35) {
-          const x1 = Math.random() * W * 0.5;
-          const len = STEP * (2 + Math.floor(Math.random() * 5));
-          traces.push({ x1, y1: y, x2: Math.min(x1 + len, W - 10), y2: y, color: CYAN });
-        }
-      }
-      for (let x = STEP; x < W - 10; x += STEP) {
-        if (Math.random() > 0.45) {
-          const y1 = Math.random() * H * 0.6;
-          const len = STEP * (2 + Math.floor(Math.random() * 4));
-          traces.push({ x1: x, y1, x2: x, y2: Math.min(y1 + len, H - 10), color: Math.random() > 0.65 ? LIME : CYAN });
-        }
-      }
-    }
-
-    function spawnSpark() {
-      if (!traces.length || sparks.length >= 18) return;
-      const t = traces[Math.floor(Math.random() * traces.length)];
-      sparks.push({ x1: t.x1, y1: t.y1, x2: t.x2, y2: t.y2, p: 0, speed: 0.006 + Math.random() * 0.01, color: t.color });
-    }
-
-    function draw() {
-      const W = canvas.offsetWidth, H = canvas.offsetHeight;
-      ctx.clearRect(0, 0, W, H);
-
-      traces.forEach(t => {
-        ctx.beginPath(); ctx.moveTo(t.x1, t.y1); ctx.lineTo(t.x2, t.y2);
-        ctx.strokeStyle = t.color + "1a"; ctx.lineWidth = 1; ctx.stroke();
-        [[t.x1, t.y1], [t.x2, t.y2]].forEach(([x, y]) => {
-          ctx.beginPath(); ctx.arc(x, y, 2, 0, Math.PI * 2);
-          ctx.fillStyle = t.color + "33"; ctx.fill();
-        });
-      });
-
-      if (frame % 10 === 0) spawnSpark();
-      frame++;
-
-      for (let i = sparks.length - 1; i >= 0; i--) {
-        const s = sparks[i];
-        s.p += s.speed;
-        if (s.p >= 1) { sparks.splice(i, 1); continue; }
-        const x = s.x1 + (s.x2 - s.x1) * s.p;
-        const y = s.y1 + (s.y2 - s.y1) * s.p;
-
-        ctx.beginPath(); ctx.moveTo(s.x1, s.y1); ctx.lineTo(x, y);
-        ctx.strokeStyle = s.color + "55"; ctx.lineWidth = 1.5; ctx.stroke();
-
-        const g = ctx.createRadialGradient(x, y, 0, x, y, 10);
-        g.addColorStop(0, s.color + "ff"); g.addColorStop(0.5, s.color + "66"); g.addColorStop(1, s.color + "00");
-        ctx.beginPath(); ctx.arc(x, y, 10, 0, Math.PI * 2); ctx.fillStyle = g; ctx.fill();
-        ctx.beginPath(); ctx.arc(x, y, 2.5, 0, Math.PI * 2); ctx.fillStyle = "#fff"; ctx.fill();
-      }
-      raf = requestAnimationFrame(draw);
-    }
-
-    resize();
-    draw();
-    const ro = new ResizeObserver(resize);
-    ro.observe(canvas);
-    return () => { cancelAnimationFrame(raf); ro.disconnect(); };
-  }, []);
-
-  return (
-    <canvas ref={ref} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none", opacity }} />
-  );
-}
-
 /* --- ui.js --- */
 function Icon({ name, size = 22, strokeWidth = 2, className = "", style = {} }) {
   const ref = React.useRef(null);
@@ -274,8 +182,6 @@ function Header({ onWhats, onSolicitar }) {
 function Hero({ onWhats, onSolicitar }) {
   return (
     <section className="hero section petrol" id="top">
-      <CircuitCanvas opacity={0.55} />
-      <div className="hero-scanline" />
       <span className="hero-glow" />
       <div className="wrap hero-grid">
         <div className="hero-copy">
