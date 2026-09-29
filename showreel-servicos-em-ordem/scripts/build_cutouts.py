@@ -12,10 +12,13 @@ SEGS = [(0.0, 7.66, 0.40), (8.85, 14.20, 0.25), (19.28, 22.52, -4.73), (30.48, 3
 RANGES = [(0, 76), (436, 472), (581, 616)]  # frames de saída com recorte
 
 def src_time(t):
-    for s, e, o in SEGS:
-        if s + o - 1e-6 <= t <= e + o + 0.6:
-            return min(max(t - o, s), e)
-    return 0.0
+    # bloco que contém t; se t cair numa pausa, usa o último frame do bloco anterior
+    best = SEGS[0]
+    for seg in SEGS:
+        if t >= seg[0] + seg[2] - 1e-6:
+            best = seg
+    s, e, o = best
+    return min(max(t - o, s), e)
 
 avail = sorted(int(f[:4]) for f in os.listdir(MATTES) if f.endswith('.png'))
 tmp = os.path.join(OUT, '_rgb'); os.makedirs(tmp, exist_ok=True)
