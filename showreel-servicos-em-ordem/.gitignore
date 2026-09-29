@@ -1,0 +1,8 @@
+node_modules
+out/*
+!out/showreel-servicos-em-ordem.mp4
+public/cut/
+public/talent.mp4
+public/mix_pre.wav
+public/stem_*.wav
+.browser
